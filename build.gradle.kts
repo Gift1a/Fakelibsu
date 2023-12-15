@@ -56,7 +56,7 @@ publishing {
     publications {
         create<MavenPublication>("maven") {
             artifact(javadocJar.get())
-            groupId = "com.github.topjohnwu"
+            groupId = "com.github.Gift1a"
             artifactId = "docs"
         }
     }
@@ -113,11 +113,11 @@ subprojects {
 
             publishing {
                 publications {
-                    register<MavenPublication>("libsu") {
+                    register<MavenPublication>("Fakelibsu") {
                         afterEvaluate {
                             from(components["release"])
                         }
-                        groupId = "com.github.topjohnwu.libsu"
+                        groupId = "com.github.Gift1a.Fakelibsu"
                         artifactId = project.name
                     }
                 }
